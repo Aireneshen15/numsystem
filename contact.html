@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+      animation: slideIn 1s ease-out;
+    }
+
+    .header {
+      text-align: center;
+      background-color: #4379e0;
+      color: white;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      color: #4379e0;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .data {
+      margin-bottom: 15px;
+    }
+
+    .data div {
+      margin: 5px 0;
+    }
+
+    .data span {
+      font-weight: bold;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">Personal Information</div>
+    <div class="data">
+      <div class="section-title">Personal Data</div>
+      <div><span>First Name:</span> Airene</div>
+      <div><span>Last Name:</span> Villacorta</div>
+      <div><span>Birthdate:</span> May 31, 2005</div>
+      <div><span>Gender:</span> Female</div>
+    </div>
+    <div class="data">
+      <div class="section-title">Contact Information</div>
+      <div><span>Phone Number:</span> 09620411823</div>
+      <div><span>Email Address:</span> Airenev28@gmail.com</div>
+      <div><span>Address:</span> Pagutlan, Tayud, Consolacion, Cebu</div>
+    </div>
+  </div>
+</body>
+</html>
